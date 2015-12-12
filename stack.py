@@ -1,7 +1,7 @@
 class stack:
     def __init__(self):
         self.items = []
-    def isempty(self):
+    def isEmpty(self):
         return self.items == []
     def push(self,item):
         self.items.insert(0,item)
