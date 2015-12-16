@@ -20,13 +20,13 @@ class stack:
                 first = i
             if m[i] == ">":
                 last = i
-            list.append(m[first+1:last])
+            liste.append(m[first+1:last])
             i = i+1
-         print list
-         return list
+         print liste
+         return liste
         
-    def tag_chacker(html_filitre(dosya)):
-        tags = html_filitre(dosya)
+    def tag_chacker(liste):
+        tags = liste
         s =stack()
         blanced = true
         i = 0
@@ -39,15 +39,15 @@ class stack:
                     blanced = false
                 else:
                     top = s.pop()
-                    if (top == tag[1:]):
-                        blanced = true
-                    else:
-                     	blanced = false
-           i =i+1
+                    if not (top == tag[1:]):
+                        blanced = fals
+           i = i+1
        if blanced and s.isEmpty():
            return true
         else:
             return false
+	def html_tag_checker(html):
+		print tag_checker(html_filtrele(html))             
     
             
         
