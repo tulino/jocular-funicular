@@ -11,7 +11,7 @@ class stack:
         return self.items[n]
     def size(self):
         return len(self.items)
-    deger = true
+    blanced = true
     def html_filitre(dosya):
 	list = []
         m =open(dosya).read()
@@ -22,8 +22,8 @@ class stack:
                 last = i
             list.append(m[first+1:last])
             i = i+1
-         print list()
-         return list()
+         print list
+         return list
         
     def tag_chacker(html_filitre(dosya)):
         tags = html_filitre(dosya)
