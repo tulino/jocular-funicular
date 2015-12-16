@@ -39,8 +39,10 @@ class stack:
                     blanced = false
                 else:
                     top = s.pop()
-                    if not (top == tag[1:]):
-                        blanced = false
+                    if (top == tag[1:]):
+                        blanced = true
+                    else:
+                     	blanced = false
            i =i+1
        if blanced and s.isEmpty():
            return true
