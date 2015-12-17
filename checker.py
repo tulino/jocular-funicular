@@ -11,7 +11,6 @@ class stack:
         return self.items[n]
     def size(self):
         return len(self.items)
-    blanced = true
     def html_filitre(dosya):
 	list = []
         m =open(dosya).read()
